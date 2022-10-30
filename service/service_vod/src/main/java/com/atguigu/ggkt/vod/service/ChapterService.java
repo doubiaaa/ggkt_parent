@@ -2,7 +2,10 @@ package com.atguigu.ggkt.vod.service;
 
 
 import com.atguigu.ggkt.model.vod.Chapter;
+import com.atguigu.ggkt.vo.vod.ChapterVo;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,5 +16,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2022-10-26
  */
 public interface ChapterService extends IService<Chapter> {
-
+    //大纲列表(章节和小节列表)
+    List<ChapterVo> getTreeList(Long courseId);
 }
