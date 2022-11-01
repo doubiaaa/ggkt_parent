@@ -64,9 +64,10 @@ public class CourseController {
     //修改课程信息
     @ApiOperation("修改课程信息")
     @PostMapping("update")
-    public Result get(@RequestBody CourseFormVo courseFormVo) {
+    public Result get(@RequestBody CourseFormVo courseFormVo)  {
         courseService.updateCourseId(courseFormVo);
         return Result.success(courseFormVo.getId());
+
     }
 
     //根据课程Id查询发布课程信息

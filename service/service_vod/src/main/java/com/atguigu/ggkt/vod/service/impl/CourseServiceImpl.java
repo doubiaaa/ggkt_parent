@@ -12,7 +12,7 @@ import com.atguigu.ggkt.vod.service.CourseDescriptionService;
 import com.atguigu.ggkt.vod.service.CourseService;
 import com.atguigu.ggkt.vod.service.SubjectService;
 import com.atguigu.ggkt.vod.service.TeacherService;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
@@ -20,7 +20,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -53,19 +56,20 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         Long subjectParentId = courseQueryVo.getSubjectParentId();//一层分类
         Long teacherId = courseQueryVo.getTeacherId();
         //判断条件为空，封装条件
-        QueryWrapper<Course> wrapper = new QueryWrapper<>();
+        LambdaQueryWrapper<Course> wrapper = new LambdaQueryWrapper<>();
         if (!StringUtils.isEmpty(title)) {
-            wrapper.like("title", title);
+            wrapper.like(Course::getTitle, title);
         }
         if (!StringUtils.isEmpty(subjectId)) {
-            wrapper.eq("subject_id", subjectId);
+            wrapper.eq(Course::getSubjectId, subjectId);
         }
         if (!StringUtils.isEmpty(subjectParentId)) {
-            wrapper.eq("subject_parent_id", subjectParentId);
+            wrapper.eq(Course::getSubjectParentId, subjectParentId);
         }
         if (!StringUtils.isEmpty(teacherId)) {
-            wrapper.eq("teacher_id", teacherId);
+            wrapper.eq(Course::getTeacherId, teacherId);
         }
+        wrapper.orderByDesc(Course::getUpdateTime);
 
         //调用方法实现条件查询分页
         Page<Course> pages = baseMapper.selectPage(pageParam, wrapper);
@@ -153,12 +157,11 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         Course course = new Course();
         BeanUtils.copyProperties(courseFormVo, course);
         baseMapper.updateById(course);
-
         //修改课程描述信息
         CourseDescription description = new CourseDescription();
         //设置课程描述id
-        description.setId(course.getId());
         description.setDescription(courseFormVo.getDescription());
+        description.setId(courseFormVo.getId());
         descriptionService.updateById(description);
 
 
