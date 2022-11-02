@@ -25,20 +25,16 @@ import java.util.List;
 @CrossOrigin
 @Api(tags = "课程章节")
 public class ChapterController {
-
     @Autowired
     private ChapterService chapterService;
 
-
-    //大纲列表(章节和小节列表)
+    //1 大纲列表（章节和小节列表）
     @ApiOperation("大纲列表")
     @GetMapping("getNestedTreeList/{courseId}")
-    public Result getNestedTreeList(@PathVariable Long courseId) {
+    public Result getTreeList(@PathVariable Long courseId) {
         List<ChapterVo> list = chapterService.getTreeList(courseId);
         return Result.success(list);
-
     }
-
     //添加章节
     @ApiOperation("添加课程章节")
     @PostMapping("save")

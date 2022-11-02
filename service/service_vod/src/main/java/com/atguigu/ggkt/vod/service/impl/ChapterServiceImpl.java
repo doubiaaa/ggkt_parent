@@ -8,6 +8,7 @@ import com.atguigu.ggkt.vod.mapper.ChapterMapper;
 import com.atguigu.ggkt.vod.service.ChapterService;
 import com.atguigu.ggkt.vod.service.VideoService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,46 +31,61 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
     @Autowired
     private VideoService videoService;
 
-
-    //大纲列表(章节和小节列表)
+    //1 大纲列表（章节和小节列表）
     @Override
     public List<ChapterVo> getTreeList(Long courseId) {
-        //定义最终数据List集合
+        //定义最终数据list集合
         List<ChapterVo> finalChapterList = new ArrayList<>();
-        //创建条件构造器
-        LambdaQueryWrapper<Chapter> queryWrapper = new LambdaQueryWrapper<>();
-        //根据courseId获取课程中所有章节
-        queryWrapper.eq(Chapter::getCourseId, courseId);
-        List<Chapter> Chapterlist = baseMapper.selectList(queryWrapper);
-        //创建条件构造器
-        LambdaQueryWrapper<Video> videoLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        //根据courseId获取课程中所有小节
-        videoLambdaQueryWrapper.eq(Video::getCourseId, courseId);
-        List<Video> VideoList = videoService.list(videoLambdaQueryWrapper);
-        //遍历章节
-        //封装所有章节
-        for (Chapter chapter : Chapterlist) {
+
+        //根据courseId获取课程里面所有章节
+        QueryWrapper<Chapter> wrapperChapter = new QueryWrapper<>();
+        wrapperChapter.eq("course_id",courseId);
+        List<Chapter> chapterList = baseMapper.selectList(wrapperChapter);
+
+        //根据courseId获取课程里面所有小节
+        LambdaQueryWrapper<Video> wrapperVideo = new LambdaQueryWrapper<>();
+        wrapperVideo.eq(Video::getCourseId,courseId);
+        List<Video> videoList = videoService.list(wrapperVideo);
+
+        //封装章节
+        //遍历所有章节
+        for (int i = 0; i < chapterList.size(); i++) {
+            //得到课程每个章节
+            Chapter chapter = chapterList.get(i);
+            // chapter -- ChapterVo
             ChapterVo chapterVo = new ChapterVo();
-            //得到每个章节对象放到finalChapterList中去
-            BeanUtils.copyProperties(chapter, chapterVo);
+            BeanUtils.copyProperties(chapter,chapterVo);
+            //得到每个章节对象放到finalChapterList集合
             finalChapterList.add(chapterVo);
 
             //封装章节里面小节
+            //创建list集合用户封装章节所有小节
             List<VideoVo> videoVoList = new ArrayList<>();
             //遍历小节list
-            for (Video video : VideoList) {
-                //判断小节在那个章节下面
-                //章节id 和 小节chapter_id
-                if (chapter.getId().equals(video.getChapterId())) {
+            for (Video video:videoList) {
+                //判断小节是哪个章节下面
+                //章节id  和 小节chapter_id
+                if(chapter.getId().equals(video.getChapterId())) {
+                    // video  -- VideoVo
                     VideoVo videoVo = new VideoVo();
-                    BeanUtils.copyProperties(video, videoVo);
+                    BeanUtils.copyProperties(video,videoVo);
+                    //放到videoVoList
                     videoVoList.add(videoVo);
-
                 }
             }
-            //把章节里面所有小节集合到整个章节当中
+            //把章节里面所有小节集合放到每个章节里面
             chapterVo.setChildren(videoVoList);
         }
         return finalChapterList;
+    }
+
+
+    //依据课程id删除章节
+    @Override
+    public void removeChapterById(Long id) {
+        //创建条件构造器
+        LambdaQueryWrapper<Chapter> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(Chapter::getCourseId, id);
+        baseMapper.delete(queryWrapper);
     }
 }

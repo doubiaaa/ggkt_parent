@@ -16,6 +16,9 @@ import java.util.List;
  * @since 2022-10-26
  */
 public interface ChapterService extends IService<Chapter> {
-    //大纲列表(章节和小节列表)
+    //1 大纲列表（章节和小节列表）
     List<ChapterVo> getTreeList(Long courseId);
+
+    //依据课程id删除章节
+    void removeChapterById(Long id);
 }

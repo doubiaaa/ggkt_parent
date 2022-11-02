@@ -64,7 +64,7 @@ public class CourseController {
     //修改课程信息
     @ApiOperation("修改课程信息")
     @PostMapping("update")
-    public Result get(@RequestBody CourseFormVo courseFormVo)  {
+    public Result get(@RequestBody CourseFormVo courseFormVo) {
         courseService.updateCourseId(courseFormVo);
         return Result.success(courseFormVo.getId());
 
@@ -85,6 +85,13 @@ public class CourseController {
         courseService.publishCourse(id);
         return Result.success(null);
 
+    }
+
+    //删除课程
+    @DeleteMapping("remove/{id}")
+    public Result remove(@PathVariable Long id) {
+        courseService.removeCourseId(id);
+        return Result.success(null);
     }
 }
 
