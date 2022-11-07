@@ -1,0 +1,122 @@
+2022-11-07 00:01:48,775 INFO [capacityManagement] start correct usage
+
+2022-11-07 00:01:48,776 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-11-07 00:01:49,009 WARN clearConfigHistory start
+
+2022-11-07 00:01:49,009 WARN clearConfigHistory, getBeforeStamp:2022-10-08 00:01:49.0, totalCount:10, pageSize:1000, removeTime:1
+
+2022-11-07 00:11:48,785 INFO [capacityManagement] start correct usage
+
+2022-11-07 00:11:48,785 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-11-07 00:11:49,025 WARN clearConfigHistory start
+
+2022-11-07 00:11:49,025 WARN clearConfigHistory, getBeforeStamp:2022-10-08 00:11:49.0, totalCount:10, pageSize:1000, removeTime:1
+
+2022-11-07 00:21:48,790 INFO [capacityManagement] start correct usage
+
+2022-11-07 00:21:48,790 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-11-07 00:21:49,042 WARN clearConfigHistory start
+
+2022-11-07 00:21:49,042 WARN clearConfigHistory, getBeforeStamp:2022-10-08 00:21:49.0, totalCount:10, pageSize:1000, removeTime:1
+
+2022-11-07 00:31:48,798 INFO [capacityManagement] start correct usage
+
+2022-11-07 00:31:48,798 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-11-07 00:31:49,047 WARN clearConfigHistory start
+
+2022-11-07 00:31:49,047 WARN clearConfigHistory, getBeforeStamp:2022-10-08 00:31:49.0, totalCount:10, pageSize:1000, removeTime:1
+
+2022-11-07 23:14:32,637 INFO Starting Nacos v1.4.1 on DESKTOP-A3E38UV with PID 4464 (D:\Code\ggkt_parent\lesson\nacos\target\nacos-server.jar started by Ly in D:\Code\ggkt_parent\lesson\nacos\bin)
+
+2022-11-07 23:14:32,638 INFO The following profiles are active: standalone
+
+2022-11-07 23:14:35,977 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5b7a8434' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-11-07 23:14:35,983 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-11-07 23:14:36,498 INFO Tomcat initialized with port(s): 8848 (http)
+
+2022-11-07 23:14:36,530 INFO Starting service [Tomcat]
+
+2022-11-07 23:14:36,530 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2022-11-07 23:14:36,873 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2022-11-07 23:14:36,908 INFO Initializing Spring embedded WebApplicationContext
+
+2022-11-07 23:14:36,908 INFO Root WebApplicationContext: initialization completed in 4206 ms
+
+2022-11-07 23:14:37,571 INFO HikariPool-1 - Starting...
+
+2022-11-07 23:14:37,573 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2022-11-07 23:14:37,965 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2022-11-07 23:14:37,971 INFO HikariPool-1 - Start completed.
+
+2022-11-07 23:14:38,873 INFO Nacos-related cluster resource initialization
+
+2022-11-07 23:14:38,882 INFO The cluster resource is initialized
+
+2022-11-07 23:14:39,255 INFO Reflections took 38 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2022-11-07 23:14:39,277 INFO Reflections took 3 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2022-11-07 23:14:39,290 INFO Reflections took 3 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2022-11-07 23:14:39,298 INFO Reflections took 1 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2022-11-07 23:14:40,104 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2022-11-07 23:14:40,230 INFO Adding welcome page: class path resource [static/index.html]
+
+2022-11-07 23:14:40,710 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2022-11-07 23:14:40,739 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5707c1cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@3676ac27, org.springframework.security.web.header.HeaderWriterFilter@26b894bd, org.springframework.security.web.csrf.CsrfFilter@3a0807b7, org.springframework.security.web.authentication.logout.LogoutFilter@2ca65ce4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48f5bde6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7072bc39, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b5cb9b2, org.springframework.security.web.session.SessionManagementFilter@30b34287, org.springframework.security.web.access.ExceptionTranslationFilter@5769e7ae]
+
+2022-11-07 23:14:40,840 INFO Initializing ExecutorService 'taskScheduler'
+
+2022-11-07 23:14:40,859 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2022-11-07 23:14:40,963 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2022-11-07 23:14:40,966 INFO Started Nacos in 9.34 seconds (JVM running for 9.896)
+
+2022-11-07 23:14:40,966 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2022-11-07 23:24:39,436 INFO [capacityManagement] start correct usage
+
+2022-11-07 23:24:39,469 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-11-07 23:24:39,714 WARN clearConfigHistory start
+
+2022-11-07 23:24:39,731 WARN clearConfigHistory, getBeforeStamp:2022-10-08 23:24:39.0, totalCount:10, pageSize:1000, removeTime:1
+
+2022-11-07 23:34:39,478 INFO [capacityManagement] start correct usage
+
+2022-11-07 23:34:39,480 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-11-07 23:34:39,865 WARN clearConfigHistory start
+
+2022-11-07 23:34:39,869 WARN clearConfigHistory, getBeforeStamp:2022-10-08 23:34:39.0, totalCount:10, pageSize:1000, removeTime:1
+
+2022-11-07 23:44:39,489 INFO [capacityManagement] start correct usage
+
+2022-11-07 23:44:39,490 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-11-07 23:44:39,879 WARN clearConfigHistory start
+
+2022-11-07 23:44:39,880 WARN clearConfigHistory, getBeforeStamp:2022-10-08 23:44:39.0, totalCount:10, pageSize:1000, removeTime:1
+
+2022-11-07 23:54:39,502 INFO [capacityManagement] start correct usage
+
+2022-11-07 23:54:39,502 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-11-07 23:54:39,891 WARN clearConfigHistory start
+
+2022-11-07 23:54:39,892 WARN clearConfigHistory, getBeforeStamp:2022-10-08 23:54:39.0, totalCount:10, pageSize:1000, removeTime:1
+
