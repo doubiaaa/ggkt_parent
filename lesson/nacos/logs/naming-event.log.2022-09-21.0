@@ -1,0 +1,108 @@
+2022-09-21 22:50:55,395 INFO DEFAULT_GROUP@@orderservice {SYNC} {IP-NEW} cluster: HZ, new ips size: 1, content: [192.168.1.2:8080:unknown:HZ_1.0_true_false_HZ]
+
+2022-09-21 22:50:55,398 INFO [IP-UPDATED] namespace: 554237c2-7a42-4b5c-8e77-89a4ac4f32d6, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.2:8080_true,
+
+2022-09-21 22:50:55,682 INFO [IP-UPDATED] namespace: 554237c2-7a42-4b5c-8e77-89a4ac4f32d6, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.2:8080_true,
+
+2022-09-21 22:50:55,682 INFO [IP-UPDATED] namespace: 554237c2-7a42-4b5c-8e77-89a4ac4f32d6, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.2:8080_true,
+
+2022-09-21 22:50:58,375 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.1.2:8080@HZ in 1, msg: tcp:timeout
+
+2022-09-21 22:51:00,998 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.1.2:8080@HZ in 2, msg: tcp:timeout
+
+2022-09-21 22:51:04,266 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-DISABLED} invalid: 192.168.1.2:8080@HZ, region: unknown, msg: tcp:timeout
+
+2022-09-21 23:00:07,094 INFO DEFAULT_GROUP@@orderservice {SYNC} {IP-NEW} cluster: HZ, new ips size: 1, content: [192.168.1.6:8080:unknown:HZ_1.0_true_false_HZ]
+
+2022-09-21 23:00:07,094 INFO [IP-UPDATED] namespace: 554237c2-7a42-4b5c-8e77-89a4ac4f32d6, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.2:8080_false,192.168.1.6:8080_true,
+
+2022-09-21 23:00:08,645 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@HZ in 1, msg: tcp:ok+
+
+2022-09-21 23:00:13,651 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@HZ in 2, msg: tcp:ok+
+
+2022-09-21 23:00:15,326 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.6:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-21 23:00:15,326 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8081_true,
+
+2022-09-21 23:00:18,344 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-ENABLED} valid: 192.168.1.6:8080@HZ, region: unknown, msg: tcp:ok+
+
+2022-09-21 23:01:03,932 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.6:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-21 23:01:03,932 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+
+2022-09-21 23:05:10,519 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+
+2022-09-21 23:11:04,737 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.6:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-21 23:11:04,737 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8083_true,192.168.1.6:8081_true,
+
+2022-09-21 23:17:13,430 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8083_true,192.168.1.6:8081_true,
+
+2022-09-21 23:17:14,899 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8083_true,192.168.1.6:8081_true,
+
+2022-09-21 23:17:17,011 INFO {POS} {IP-DISABLED} valid: 192.168.1.6:8083@DEFAULT@DEFAULT_GROUP@@userservice, region: unknown, msg: client timeout after 15000, last beat: 1663773420416
+
+2022-09-21 23:17:32,037 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.1.6:8083:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-09-21 23:17:32,037 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+
+2022-09-21 23:52:02,311 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.1.6:8080@HZ in 1, msg: tcp:timeout
+
+2022-09-21 23:52:03,570 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.1.6:8080@HZ in 2, msg: tcp:timeout
+
+2022-09-21 23:52:05,374 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-DISABLED} invalid: 192.168.1.6:8080@HZ, region: unknown, msg: tcp:timeout
+
+2022-09-21 23:52:07,346 INFO DEFAULT_GROUP@@orderservice {SYNC} {IP-NEW} cluster: SH, new ips size: 1, content: [192.168.1.6:8080:unknown:SH_1.0_true_false_SH]
+
+2022-09-21 23:52:07,346 INFO [IP-UPDATED] namespace: 554237c2-7a42-4b5c-8e77-89a4ac4f32d6, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.2:8080_false,192.168.1.6:8080_false,192.168.1.6:8080_true,
+
+2022-09-21 23:52:07,455 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@HZ in 1, msg: tcp:ok+
+
+2022-09-21 23:52:10,183 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@SH in 1, msg: tcp:ok+
+
+2022-09-21 23:52:11,177 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@HZ in 2, msg: tcp:ok+
+
+2022-09-21 23:52:13,023 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@SH in 2, msg: tcp:ok+
+
+2022-09-21 23:52:14,667 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-ENABLED} valid: 192.168.1.6:8080@HZ, region: unknown, msg: tcp:ok+
+
+2022-09-21 23:52:15,149 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-ENABLED} valid: 192.168.1.6:8080@SH, region: unknown, msg: tcp:ok+
+
+2022-09-21 23:56:03,921 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+
+2022-09-21 23:56:05,336 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+
+2022-09-21 23:57:03,988 INFO DEFAULT_GROUP@@orderservice {SYNC} {IP-NEW} cluster: SH, new ips size: 1, content: [192.168.1.6:8080:unknown:SH_1.0_true_false_SH]
+
+2022-09-21 23:57:03,988 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.6:8080_true,
+
+2022-09-21 23:57:03,988 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.6:8080_true,
+
+2022-09-21 23:57:06,814 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@SH in 1, msg: tcp:ok+
+
+2022-09-21 23:57:09,630 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@SH in 2, msg: tcp:ok+
+
+2022-09-21 23:57:11,755 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-ENABLED} valid: 192.168.1.6:8080@SH, region: unknown, msg: tcp:ok+
+
+2022-09-21 23:57:17,186 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+
+2022-09-21 23:57:18,497 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+
+2022-09-21 23:59:09,037 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.1.6:8080@SH in 1, msg: tcp:error:远程主机强迫关闭了一个现有的连接。
+
+2022-09-21 23:59:10,037 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.1.6:8080@SH in 2, msg: tcp:timeout
+
+2022-09-21 23:59:12,050 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-DISABLED} invalid: 192.168.1.6:8080@SH, region: unknown, msg: tcp:timeout
+
+2022-09-21 23:59:13,395 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.6:8080_false,
+
+2022-09-21 23:59:14,044 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@SH in 1, msg: tcp:ok+
+
+2022-09-21 23:59:17,182 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-ENABLED} pre-valid: 192.168.1.6:8080@SH in 2, msg: tcp:ok+
+
+2022-09-21 23:59:19,536 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-ENABLED} valid: 192.168.1.6:8080@SH, region: unknown, msg: tcp:ok+
+
+2022-09-21 23:59:29,503 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+
+2022-09-21 23:59:30,911 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.6:8082_true,192.168.1.6:8081_true,
+

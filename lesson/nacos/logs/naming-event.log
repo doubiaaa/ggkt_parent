@@ -1,0 +1,48 @@
+2022-11-06 17:31:48,320 INFO DEFAULT_GROUP@@orderservice {SYNC} {IP-NEW} cluster: SH, new ips size: 2, content: [192.168.1.8:8080:unknown:SH_1.0_true_false_SH, 192.168.1.6:8080:unknown:SH_1.0_false_false_SH]
+
+2022-11-06 17:31:48,322 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.8:8080_true,192.168.1.6:8080_false,
+
+2022-11-06 17:31:48,605 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.8:8080_true,192.168.1.6:8080_false,
+
+2022-11-06 17:31:48,605 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@orderservice, ips: 192.168.1.8:8080_true,192.168.1.6:8080_false,
+
+2022-11-06 17:31:50,913 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.1.8:8080@SH in 1, msg: tcp:timeout
+
+2022-11-06 17:31:52,997 INFO serviceName: DEFAULT_GROUP@@orderservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.1.8:8080@SH in 2, msg: tcp:timeout
+
+2022-11-06 17:31:55,979 INFO serviceName: DEFAULT_GROUP@@orderservice {POS} {IP-DISABLED} invalid: 192.168.1.8:8080@SH, region: unknown, msg: tcp:timeout
+
+2022-11-06 17:48:44,952 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.9:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-11-06 17:48:44,952 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 192.168.1.9:8301_true,
+
+2022-11-06 17:48:53,016 INFO DEFAULT_GROUP@@service-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.9:8333:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-11-06 17:48:53,016 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-gateway, ips: 192.168.1.9:8333_true,
+
+2022-11-06 19:45:11,229 INFO {POS} {IP-DISABLED} valid: 192.168.1.9:8301@DEFAULT@DEFAULT_GROUP@@service-vod, region: unknown, msg: client timeout after 15000, last beat: 1667735093550
+
+2022-11-06 19:45:14,086 INFO {POS} {IP-DISABLED} valid: 192.168.1.9:8333@DEFAULT@DEFAULT_GROUP@@service-gateway, region: unknown, msg: client timeout after 15000, last beat: 1667735096769
+
+2022-11-06 19:45:21,984 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.9:8302:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-11-06 19:45:21,984 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 192.168.1.9:8302_true,
+
+2022-11-06 19:45:26,362 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.1.9:8301:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-11-06 19:45:26,362 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 
+
+2022-11-06 19:45:29,122 INFO DEFAULT_GROUP@@service-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.1.9:8333:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-11-06 19:45:29,122 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-gateway, ips: 
+
+2022-11-06 19:45:35,091 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.9:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-11-06 19:45:35,091 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 192.168.1.9:8301_true,
+
+2022-11-06 19:45:43,463 INFO DEFAULT_GROUP@@service-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.9:8333:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-11-06 19:45:43,463 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-gateway, ips: 192.168.1.9:8333_true,
+
+2022-11-06 19:47:56,464 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-gateway, ips: 192.168.1.9:8333_true,
+

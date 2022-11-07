@@ -1,0 +1,12 @@
+2022-09-26 22:06:32,674|192.168.1.8|userservice|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2022-09-26 22:06:32,701|192.168.1.8|userservice.yaml|DEFAULT_GROUP|null|unknown|1663773522283|pull|ok|427670418|127.0.0.1
+2022-09-26 22:06:32,705|192.168.1.8|userservice-dev.yaml|DEFAULT_GROUP|null|unknown|1663773576138|pull|ok|427616567|127.0.0.1
+2022-09-26 22:06:35,081|192.168.1.8|userservice|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2022-09-26 22:06:35,091|192.168.1.8|userservice.yaml|DEFAULT_GROUP|null|unknown|1663773522283|pull|ok|427672808|127.0.0.1
+2022-09-26 22:06:35,097|192.168.1.8|userservice-test.yaml|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2022-09-26 22:58:24,311|192.168.1.8|userservice|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2022-09-26 22:58:24,320|192.168.1.8|userservice.yaml|DEFAULT_GROUP|null|unknown|1663773522283|pull|ok|430782037|127.0.0.1
+2022-09-26 22:58:24,327|192.168.1.8|userservice-dev.yaml|DEFAULT_GROUP|null|unknown|1663773576138|pull|ok|430728189|127.0.0.1
+2022-09-26 22:58:25,945|192.168.1.8|userservice|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2022-09-26 22:58:25,952|192.168.1.8|userservice.yaml|DEFAULT_GROUP|null|unknown|1663773522283|pull|ok|430783669|127.0.0.1
+2022-09-26 22:58:25,957|192.168.1.8|userservice-test.yaml|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1

@@ -207,9 +207,9 @@ spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
 
 ```java
 @SpringBootApplication
-public class ApiGatewayApplication {
+public class com.itguigu.ggkt.gateway.ApiGatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ApiGatewayApplication.class, args);
+        SpringApplication.run(com.itguigu.ggkt.gateway.ApiGatewayApplication.class, args);
     }
 }
 ```

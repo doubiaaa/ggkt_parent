@@ -1,0 +1,6 @@
+2022-11-06 19:48:15,312|192.168.1.9|userservice-dev.yaml|DEFAULT_GROUP|null|null|1667735295249|192.168.1.9|persist|remove|-1|null
+2022-11-06 19:48:15,313|192.168.1.9|userservice.yaml|DEFAULT_GROUP|null|null|1667735295249|192.168.1.9|persist|remove|-1|null
+2022-11-06 19:48:15,331|192.168.1.9|userservice-dev.yaml|DEFAULT_GROUP|null|null|1667735295249|192.168.1.9|notify|ok|77|192.168.1.9:8848
+2022-11-06 19:48:15,331|192.168.1.9|userservice.yaml|DEFAULT_GROUP|null|null|1667735295249|192.168.1.9|notify|ok|77|192.168.1.9:8848
+2022-11-06 19:48:15,429|192.168.1.9|userservice-dev.yaml|DEFAULT_GROUP|null|null|1667735295249|192.168.1.9|dump|remove-ok|180|0
+2022-11-06 19:48:15,429|192.168.1.9|userservice.yaml|DEFAULT_GROUP|null|null|1667735295249|192.168.1.9|dump|remove-ok|180|0

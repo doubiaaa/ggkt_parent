@@ -1,0 +1,12 @@
+2022-09-20 00:03:45,782 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.2:8081_true,192.168.1.2:8082_true,
+
+2022-09-20 00:03:47,199 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.2:8081_true,192.168.1.2:8082_true,
+
+2022-09-20 00:20:31,609 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.2:8081_true,192.168.1.2:8082_true,
+
+2022-09-20 00:20:33,039 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.2:8081_true,192.168.1.2:8082_true,
+
+2022-09-20 00:22:33,803 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.2:8081_true,192.168.1.2:8082_true,
+
+2022-09-20 00:22:35,235 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.1.2:8081_true,192.168.1.2:8082_true,
+

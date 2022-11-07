@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@CrossOrigin //跨域
+//@CrossOrigin //跨域
 @RequestMapping("/admin/vod/user")
 public class UserLoginController {
 
