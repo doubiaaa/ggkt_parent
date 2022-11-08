@@ -1,44 +1,54 @@
-2022-11-07 23:14:38,920 INFO raft peers changed: [Member{ip='192.168.1.9', port=8848, state=UP, extendInfo={raftPort=7848}}]
+2022-11-08 10:18:02,026 INFO raft peers changed: [Member{ip='192.168.0.238', port=8848, state=UP, extendInfo={raftPort=7848}}]
 
-2022-11-07 23:14:38,940 INFO initializing Raft sub-system
+2022-11-08 10:18:02,044 INFO initializing Raft sub-system
 
-2022-11-07 23:14:38,940 INFO finish loading all datums, size: 0 cost 0 ms.
+2022-11-08 10:18:02,044 INFO finish loading all datums, size: 0 cost 0 ms.
 
-2022-11-07 23:14:38,943 INFO cache loaded, datum count: 0, current term: 0
+2022-11-08 10:18:02,047 INFO cache loaded, datum count: 0, current term: 0
 
-2022-11-07 23:14:38,943 INFO finish to load data from disk, cost: 3 ms.
+2022-11-08 10:18:02,047 INFO finish to load data from disk, cost: 3 ms.
 
-2022-11-07 23:14:38,946 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+2022-11-08 10:18:02,049 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
 
-2022-11-07 23:14:39,384 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+2022-11-08 10:18:02,432 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
 
-2022-11-07 23:14:39,396 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+2022-11-08 10:18:02,442 INFO add listener: com.alibaba.nacos.naming.domains.meta.
 
-2022-11-07 23:14:42,981 INFO leader timeout, start voting,leader: {"ip":"192.168.1.9:8848","term":0,"leaderDueMs":16772,"heartbeatDueMs":5000,"state":"FOLLOWER"}, term: 0
+2022-11-08 10:18:06,590 INFO leader timeout, start voting,leader: {"ip":"192.168.0.238:8848","term":0,"leaderDueMs":16150,"heartbeatDueMs":5000,"state":"FOLLOWER"}, term: 0
 
-2022-11-07 23:14:43,914 WARN start to close old raft protocol!!!
+2022-11-08 10:18:07,021 WARN start to close old raft protocol!!!
 
-2022-11-07 23:14:43,914 WARN stop old raft protocol task for notifier
+2022-11-08 10:18:07,021 WARN stop old raft protocol task for notifier
 
-2022-11-07 23:14:43,914 WARN stop old raft protocol task for master task
+2022-11-08 10:18:07,021 WARN stop old raft protocol task for master task
 
-2022-11-07 23:14:43,914 WARN stop old raft protocol task for heartbeat task
+2022-11-08 10:18:07,021 WARN stop old raft protocol task for heartbeat task
 
-2022-11-07 23:14:43,914 WARN clean old cache datum for old raft
+2022-11-08 10:18:07,021 WARN clean old cache datum for old raft
 
-2022-11-07 23:14:43,914 WARN start to close old raft protocol!!!
+2022-11-08 10:18:07,021 WARN start to close old raft protocol!!!
 
-2022-11-07 23:14:43,914 WARN stop old raft protocol task for notifier
+2022-11-08 10:18:07,021 WARN stop old raft protocol task for notifier
 
-2022-11-07 23:14:43,914 WARN stop old raft protocol task for master task
+2022-11-08 10:18:07,021 WARN stop old raft protocol task for master task
 
-2022-11-07 23:14:43,914 WARN stop old raft protocol task for heartbeat task
+2022-11-08 10:18:07,021 WARN stop old raft protocol task for heartbeat task
 
-2022-11-07 23:14:43,914 WARN clean old cache datum for old raft
+2022-11-08 10:18:07,021 WARN clean old cache datum for old raft
 
-2022-11-07 23:14:43,914 WARN start to move old raft protocol metadata
+2022-11-08 10:18:07,021 WARN start to move old raft protocol metadata
 
-2022-11-07 23:14:43,916 WARN start to move old raft protocol metadata
+2022-11-08 10:18:07,023 WARN start to move old raft protocol metadata
 
-2022-11-07 23:14:43,916 INFO raft peers changed: [Member{ip='192.168.1.9', port=8848, state=UP, extendInfo={lastRefreshTime=1667834083916, raftPort=7848, version=1.4.1}}]
+2022-11-08 10:18:07,023 INFO raft peers changed: [Member{ip='192.168.0.238', port=8848, state=UP, extendInfo={lastRefreshTime=1667873887023, raftPort=7848, version=1.4.1}}]
+
+2022-11-08 10:18:20,994 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@service-order
+
+2022-11-08 10:18:23,555 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@service-vod
+
+2022-11-08 10:18:28,320 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@service-activity
+
+2022-11-08 10:18:32,723 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@service-user
+
+2022-11-08 10:18:35,085 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@service-gateway
 
