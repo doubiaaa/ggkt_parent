@@ -1,20 +1,20 @@
-2022-11-08 10:18:21,135 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8302:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-11-11 10:38:33,707 INFO DEFAULT_GROUP@@service-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8303:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-11-08 10:18:21,137 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 192.168.0.238:8302_true,
+2022-11-11 10:38:33,708 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-activity, ips: 192.168.0.238:8303_true,
 
-2022-11-08 10:18:23,556 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-11-11 10:38:41,659 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8302:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-11-08 10:18:23,556 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 192.168.0.238:8301_true,
+2022-11-11 10:38:41,660 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 192.168.0.238:8302_true,
 
-2022-11-08 10:18:28,321 INFO DEFAULT_GROUP@@service-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8303:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-11-11 10:38:46,880 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-11-08 10:18:28,321 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-activity, ips: 192.168.0.238:8303_true,
+2022-11-11 10:38:46,880 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 192.168.0.238:8301_true,
 
-2022-11-08 10:18:32,724 INFO DEFAULT_GROUP@@service-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8304:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-11-11 10:38:49,390 INFO DEFAULT_GROUP@@service-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8304:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-11-08 10:18:32,724 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-user, ips: 192.168.0.238:8304_true,
+2022-11-11 10:38:49,390 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-user, ips: 192.168.0.238:8304_true,
 
-2022-11-08 10:18:35,085 INFO DEFAULT_GROUP@@service-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8333:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-11-11 10:38:51,783 INFO DEFAULT_GROUP@@service-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.238:8333:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-11-08 10:18:35,086 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-gateway, ips: 192.168.0.238:8333_true,
+2022-11-11 10:38:51,783 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-gateway, ips: 192.168.0.238:8333_true,
 

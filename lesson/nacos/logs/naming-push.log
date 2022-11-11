@@ -1,2 +1,18 @@
-2022-11-08 10:18:22,151 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+2022-11-11 10:38:34,722 INFO DEFAULT_GROUP@@service-activity is changed, add it to push queue.
+
+2022-11-11 10:38:42,673 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2022-11-11 10:38:47,888 INFO DEFAULT_GROUP@@service-vod is changed, add it to push queue.
+
+2022-11-11 10:38:50,397 INFO DEFAULT_GROUP@@service-user is changed, add it to push queue.
+
+2022-11-11 10:38:51,104 WARN client: 192.168.0.238:63137 already associated with key serviceName: DEFAULT_GROUP@@service-activity, clusters: , address: /192.168.0.238:63137, agent: Nacos-Java-Client:v1.1.4
+
+2022-11-11 10:38:52,785 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2022-11-11 10:38:52,791 INFO serviceName: DEFAULT_GROUP@@service-gateway changed, schedule push for: 192.168.0.238:63137, agent: Nacos-Java-Client:v1.1.4, key: 192.168.0.238,63137,135358007437000
+
+2022-11-11 10:38:52,791 INFO send udp packet: 192.168.0.238,63137,135358007437000
+
+2022-11-11 10:38:52,795 INFO received ack: {"type": "push-ack", "lastRefTime":"135358007437000", "data":""} from: 192.168.0.238:63137, cost: 4 ms, unacked: 0, total push: 1
 
